@@ -117,8 +117,7 @@
 				B929FE85210FAAE300796619 /* KeyChain */,
 				B929FE8A210FAAE300796619 /* TouchID */,
 			);
-			name = Security;
-			path = "../../../bs2-app-ios/MobileBanking/Infrastructure/Security";
+			path = Security;
 			sourceTree = "<group>";
 		};
 		B929FE82210FAAE300796619 /* Obfuscator */ = {

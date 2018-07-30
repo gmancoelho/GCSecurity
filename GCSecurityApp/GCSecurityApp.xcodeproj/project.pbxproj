@@ -12,6 +12,12 @@
 		B929FE6F210FA9E900796619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B929FE6D210FA9E900796619 /* Main.storyboard */; };
 		B929FE71210FA9ED00796619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B929FE70210FA9ED00796619 /* Assets.xcassets */; };
 		B929FE74210FA9ED00796619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B929FE72210FA9ED00796619 /* LaunchScreen.storyboard */; };
+		B929FE8D210FAAE300796619 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929FE83210FAAE300796619 /* Obfuscator.swift */; };
+		B929FE8E210FAAE300796619 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929FE84210FAAE300796619 /* SecurityManager.swift */; };
+		B929FE8F210FAAE300796619 /* GCKeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929FE86210FAAE300796619 /* GCKeychainStorage.swift */; };
+		B929FE90210FAAE300796619 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929FE88210FAAE300796619 /* KeychainWrapper.swift */; };
+		B929FE91210FAAE300796619 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929FE89210FAAE300796619 /* KeychainItemAccessibility.swift */; };
+		B929FE92210FAAE300796619 /* TouchIDAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B929FE8B210FAAE300796619 /* TouchIDAuthentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		B929FE70210FA9ED00796619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B929FE73210FA9ED00796619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B929FE75210FA9ED00796619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B929FE83210FAAE300796619 /* Obfuscator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
+		B929FE84210FAAE300796619 /* SecurityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
+		B929FE86210FAAE300796619 /* GCKeychainStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCKeychainStorage.swift; sourceTree = "<group>"; };
+		B929FE88210FAAE300796619 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		B929FE89210FAAE300796619 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		B929FE8B210FAAE300796619 /* TouchIDAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDAuthentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		B929FE68210FA9E900796619 /* GCSecurityApp */ = {
 			isa = PBXGroup;
 			children = (
+				B929FE7F210FAAE300796619 /* Security */,
 				B929FE7B210FA9FB00796619 /* Application */,
 				B929FE7C210FAA0100796619 /* Modules */,
 				B929FE7D210FAA0700796619 /* Views */,
@@ -94,6 +107,52 @@
 				B929FE70210FA9ED00796619 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		B929FE7F210FAAE300796619 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				B929FE82210FAAE300796619 /* Obfuscator */,
+				B929FE84210FAAE300796619 /* SecurityManager.swift */,
+				B929FE85210FAAE300796619 /* KeyChain */,
+				B929FE8A210FAAE300796619 /* TouchID */,
+			);
+			name = Security;
+			path = "../../../bs2-app-ios/MobileBanking/Infrastructure/Security";
+			sourceTree = "<group>";
+		};
+		B929FE82210FAAE300796619 /* Obfuscator */ = {
+			isa = PBXGroup;
+			children = (
+				B929FE83210FAAE300796619 /* Obfuscator.swift */,
+			);
+			path = Obfuscator;
+			sourceTree = "<group>";
+		};
+		B929FE85210FAAE300796619 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				B929FE86210FAAE300796619 /* GCKeychainStorage.swift */,
+				B929FE87210FAAE300796619 /* KeyChainWrapper */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		B929FE87210FAAE300796619 /* KeyChainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				B929FE88210FAAE300796619 /* KeychainWrapper.swift */,
+				B929FE89210FAAE300796619 /* KeychainItemAccessibility.swift */,
+			);
+			path = KeyChainWrapper;
+			sourceTree = "<group>";
+		};
+		B929FE8A210FAAE300796619 /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				B929FE8B210FAAE300796619 /* TouchIDAuthentication.swift */,
+			);
+			path = TouchID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +228,12 @@
 			files = (
 				B929FE6C210FA9E900796619 /* ViewController.swift in Sources */,
 				B929FE6A210FA9E900796619 /* AppDelegate.swift in Sources */,
+				B929FE90210FAAE300796619 /* KeychainWrapper.swift in Sources */,
+				B929FE8D210FAAE300796619 /* Obfuscator.swift in Sources */,
+				B929FE91210FAAE300796619 /* KeychainItemAccessibility.swift in Sources */,
+				B929FE8F210FAAE300796619 /* GCKeychainStorage.swift in Sources */,
+				B929FE8E210FAAE300796619 /* SecurityManager.swift in Sources */,
+				B929FE92210FAAE300796619 /* TouchIDAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
